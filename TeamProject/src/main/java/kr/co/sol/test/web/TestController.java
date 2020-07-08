@@ -10,4 +10,12 @@ public class TestController {
 		// 깃 테스트용 주석처리.
 		return "test";
 	}
+	
+	@GetMapping("/123")
+	public String test111() {
+		// 깃 테스트용 주석처리.
+		// 태웅쓰ㄴㄴ
+		return "test123";
+	}
+	
 }
