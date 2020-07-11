@@ -9,4 +9,9 @@ public class TestController {
 	public String intro() {
 		return "index";
 	}
+	
+	@RequestMapping("/login")
+	public String login() {
+		return "login";
+	}
 }

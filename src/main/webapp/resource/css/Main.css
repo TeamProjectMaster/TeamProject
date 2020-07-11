@@ -1,0 +1,42 @@
+@charset "UTF-8";
+#header{
+	width:100%;
+	background-color: grey;
+}
+#logo{
+	width:15%;
+	float: left;
+}
+#icon > a > div {
+	width:10%;
+	line-height:30px;
+	float:right;
+	background-color: yellow;
+	text-align: center;
+}
+
+#searchBar{
+	background-color: gray;
+	margin: 10px;
+	text-align: center;
+}
+
+#searchBar > input {
+    background-image: url("../test.jpg");
+    background-repeat: no-repeat;
+    text-indent: 30px;
+}
+#gnb {
+	line-height: 3;
+	text-align: center;
+}
+#gnb > div {
+    width:20%;
+    float:left;
+    margin-left:auto;
+    margin-right:auto;
+	background-color: red;
+}
+#clear {
+	clear:both;
+}
