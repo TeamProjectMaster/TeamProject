@@ -1,12 +1,31 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
-<!DOCTYPE html>
+<%@ page contentType="text/html;charset=UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>Insert title here</title>
+<title>Simple Shopping Mall </title>
+<link rel="stylesheet" type="text/css" href="./resource/css/Main.css">
+<!-- <script  type="text/javascript" src="./resources/js/mainScript.js" charset="utf-8"></script> -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
-<body>
-<h1>테스트화면</h1>
+
+<body >
+    <c:import url="top.jsp"/>
+	<table class="tableclass1">
+	 <c:choose>
+	  <c:when test="${mdto.mem_id!=null}">
+	     <tr > 
+      	  <td style="background-color: #F1F8E0;">${mdto.m_name}님 방문해 주셔서 감사합니다.</td>
+  	     </tr>
+	  </c:when>
+	  <c:when test="${mdto.mem_id==null}">
+	  <tr>
+	   <td style="background-color: #F1F8E0;"> 로그인 하신 후 이용해 주세요</td>
+	  </tr>
+	  </c:when>
+	 </c:choose>
+	
+	</table>
+  <c:import url="bottom.jsp"/>
+ 
 </body>
-</html>
+</html>  
