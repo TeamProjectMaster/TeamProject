@@ -17,7 +17,7 @@ public class TestController {
 	public String intro(HttpServletRequest request, HttpServletResponse response, TestDTO tdto, Model model) {
 		String ln = testService.testln();
 		System.out.println("name이 나와야합니다:"+ln);
-		System.out.println("나는 김대환이다아아아아!");
+		System.out.println("나는 김태웅이다아아아아!");
 		return "index";
 	}
 	
