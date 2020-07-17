@@ -1,12 +1,22 @@
 package kr.co.sol.web;
 
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 public class TestController {
+	@Autowired
+	TestService testService;
+	
 	@RequestMapping("/")
-	public String intro() {
+	public String intro(HttpServletRequest request, HttpServletResponse response, TestDTO tdto, Model model) {
+		String ln = testService.testln();
+		System.out.println("name이 나와야합니다:"+ln);
 		return "index";
 	}
 	
