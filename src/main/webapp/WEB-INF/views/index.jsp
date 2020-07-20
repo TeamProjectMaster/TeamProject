@@ -10,6 +10,15 @@
 
 <body >
     <c:import url="top.jsp"/>
+    <form action="/">
+    	<div id="gnb">
+		<a href="event">
+			<div>공지사항/이벤트</div>
+		</a>
+		<a href="#">
+			<div>문의</div>
+		</a>
+	</div>
 	<table class="tableclass1">
 	 <c:choose>
 	  <c:when test="${mdto.mem_id!=null}">
@@ -25,6 +34,7 @@
 	 </c:choose>
 	
 	</table>
+    </form>
   <c:import url="bottom.jsp"/>
  
 </body>
