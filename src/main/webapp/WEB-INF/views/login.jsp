@@ -72,12 +72,15 @@ p {
 	font-size:15px;
 	font-weight:bold;
 }
+
+th{
+font-size:20px;}
 </style>
 </head>
 <body>
 <form name="login" action="/">
 <table style="margin-left:auto;margin-right:auto;">
-	<thead><th colspan="3">로그인</th></thead>
+	<thead><th>Login</th></thead>
 	<tr>
 		<td>ID</td>
 		<td colspan="2"><input type="text" /></td>
@@ -91,7 +94,6 @@ p {
   			<input type="checkbox">
   			<span class="slider round"></span>
 		</label>
-		<p>OFF</p><p style="display:none;">ON</p>
 		</td>
 		<td  colspan="2" align="center">
 		<input type="button" value="가입">&nbsp;&nbsp;&nbsp;
