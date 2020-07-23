@@ -1,22 +1,33 @@
 @charset "UTF-8";
 #header{
 	width:100%;
-	background-color: grey;
+/* 	background-color: grey; */
 }
-#logo{
-	width:15%;
-	float: left;
+#header > a{
+	width: 100%;
+	text-align: center;
+	font-size: 36pt;
+	text-decoration: none;
+	color: maroon;
+	font-weight: bold;
+	font-style: italic;
 }
+/* #logo{ */
+/* 	float:  */
+/* 	width:15%; */
+/* } */
 #icon > a > div {
 	width:10%;
 	line-height:30px;
 	float:right;
-	background-color: yellow;
 	text-align: center;
+	color: white;
+	font-style: italic;
+	background-color: gray;
 }
 
 #searchBar{
-	background-color: gray;
+/* 	background-color: gray; */
 	margin: 10px;
 	text-align: center;
 }
@@ -30,13 +41,31 @@
 	line-height: 3;
 	text-align: center;
 }
-#gnb > div {
-    width:20%;
+#gnb > a > div {
+    width:49.5%;
     float:left;
     margin-left:auto;
     margin-right:auto;
-	background-color: red;
+	background-color: yellow;
+	border: 1px solid black;
+	color: black;
+}
+
+#gnb > a > div:hover{
+	color: orange;
 }
 #clear {
 	clear:both;
 }
+
+.hm{
+	margin: 3px;
+	padding: 2px;
+	border: 1px solid gray;
+	float: right;
+	color: white;
+	text-decoration: none;	
+	background-color: gray;
+}
+
+
